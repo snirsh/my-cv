@@ -1,0 +1,90 @@
+.card-div {
+    height: auto;
+    margin: 50px auto;
+    padding: 0;
+    position: relative;
+    background-color: #263238;
+    width: 60%;
+    align-items: left;
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.my_pic {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: 30rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.card-text {
+    color: white;
+    font-size: 3vh;
+    margin-top: 0;
+    margin-left: 5px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+
+}
+.card-header {
+    font-family: 'Merriweather', serif;
+}
+.card-inner-text {
+    text-align: justify;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2vw;
+    line-height: 1.75;
+    font-weight: 200;
+}
+.center {
+    display: table;
+    width: 100%;
+    height: auto;
+}
+#social-test {
+    display: table-cell;
+    text-align: left;
+    font-size: 30px;
+}
+#social-test .social {
+    padding-left: 0px;
+}
+#social-test li {
+    display: inline-block;
+    text-align: center;
+}
+#social-test li a {
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: ease 0.3s;
+}
+#social-test li a:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.social:hover > li {
+    opacity: 0.5;
+}
+.social:hover > li:hover {
+    opacity: 1;
+}
+  
