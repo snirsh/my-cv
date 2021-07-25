@@ -95,3 +95,18 @@
         font-size: 2vh;
     }
 }
+
+@media only screen and (max-width: 667) {
+    .card-div {
+        height: 80%;
+        flex-direction: column;
+    }
+
+    .card-text {
+        font-size: 2vh;
+    }
+
+    .card-inner-text {
+        font-size: 2vh;
+    }
+}
