@@ -1,22 +1,22 @@
 .card-div {
     height: auto;
-    margin: 50px auto;
-    padding: 0;
-    position: relative;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     background-color: #263238;
-    width: 60%;
-    align-items: left;
+    display: flex;
     font-family: 'Inconsolata', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .my_pic {
-    position: relative;
-    width: 100%;
     object-fit: cover;
-    max-height: 30rem;
+    max-height: 35rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
@@ -27,12 +27,9 @@
     font-size: 3vh;
     margin-top: 0;
     margin-left: 5px;
-    margin: auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 0px;
     font-family: 'Inconsolata', monospace;
-
 }
 .card-header {
     font-family: 'Merriweather', serif;
@@ -42,42 +39,39 @@
     color: white;
     font-family: 'Inconsolata', monospace;
     font-size: 2vw;
-    line-height: 1.75;
+    line-height: 1.55;
     font-weight: 200;
 }
-.center {
-    display: table;
-    width: 100%;
-    height: auto;
-}
-#social-test {
+#social-div {
+    position:absolute;
+    bottom: 0px;
+    right: 5px;
     display: table-cell;
     text-align: left;
     font-size: 30px;
 }
-#social-test .social {
+#social-div .social {
     padding-left: 0px;
+    margin-bottom: 5px;
 }
-#social-test li {
+#social-div li {
     display: inline-block;
     text-align: center;
 }
-#social-test li a {
+#social-div li a {
     color: rgba(255, 255, 255, 0.6);
     border-radius: 6px;
-    list-style-type: none;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     padding: 0;
     border: 1px solid rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-left: 10px;
     transition: ease 0.3s;
 }
-#social-test li a:hover {
+#social-div li a:hover {
     color: #ffffff;
     border: 1px solid #ffffff;
 }
@@ -87,4 +81,17 @@
 .social:hover > li:hover {
     opacity: 1;
 }
-  
+@media only screen and (max-width: 480px), only screen and (orientation: portrait) {
+    .card-div {
+        height: 80%;
+        flex-direction: column;
+    }
+
+    .card-text {
+        font-size: 2vh;
+    }
+
+    .card-inner-text {
+        font-size: 2vh;
+    }
+}

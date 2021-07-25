@@ -22,15 +22,13 @@ export default class CardComponent extends Component {
                     <h1 className="card-header">{MY_NAME}</h1>
                     <p className="card-inner-text">{DESCRIPTION}</p>
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                    <div class="center">
-                        <div id="social-test">
-                            <ul class="social">
-                                <li><a href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="https://github.com/snirsh"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
+                    <div id="social-div">
+                        <ul class="social">
+                            <li><a href="https://facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/snirsh"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
